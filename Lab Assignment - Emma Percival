@@ -1,0 +1,59 @@
+{
+ "cells": [
+  {
+   "cell_type": "markdown",
+   "id": "5213f764-80fa-49d4-8aeb-123c1198404a",
+   "metadata": {},
+   "source": [
+    "# Lab Assignment - Emma Percival "
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "b6860dd8-d5f2-445b-83e0-f48e28f5290e",
+   "metadata": {},
+   "source": [
+    "## 200012588"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "0e28d525-61d7-4c9b-b371-8abfa9bbe72f",
+   "metadata": {},
+   "source": [
+    "### https://github.com/elpercival7/PY4SA_Assignment "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "0726a44b-a0cd-409f-8966-d0ce3c4ca411",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "### "
+   ]
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3 (ipykernel)",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.10.9"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
