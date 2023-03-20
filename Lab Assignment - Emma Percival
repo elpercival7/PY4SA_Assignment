@@ -115,7 +115,7 @@
    "id": "7b5bf2ca-ebbf-4a79-ba06-caf222cc3f89",
    "metadata": {},
    "source": [
-    "### **Task 2**"
+    "### **Task 3**"
    ]
   },
   {
@@ -133,8 +133,6 @@
    "metadata": {},
    "outputs": [],
    "source": [
-    "lst1 = [18,26]\n",
-    "lst2 = [24,32]\n",
     "\n"
    ]
   }
