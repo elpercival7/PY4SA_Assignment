@@ -128,13 +128,41 @@
   },
   {
    "cell_type": "code",
-   "execution_count": null,
+   "execution_count": 15,
    "id": "ba436ef0-5308-4abd-95a0-34c607a13489",
    "metadata": {},
-   "outputs": [],
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Collecting haversine\n",
+      "  Downloading haversine-2.8.0-py2.py3-none-any.whl (7.7 kB)\n",
+      "Installing collected packages: haversine\n",
+      "Successfully installed haversine-2.8.0\n",
+      "Note: you may need to restart the kernel to use updated packages.\n"
+     ]
+    }
+   ],
    "source": [
-    "\n"
+    "pip install haversine \n"
    ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 17,
+   "id": "667cd410-d0f7-4a07-b5a4-170e0e477e8b",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "76da3b2b-25ac-4be1-a450-d9fca6369b53",
+   "metadata": {},
+   "outputs": [],
+   "source": []
   }
  ],
  "metadata": {
