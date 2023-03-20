@@ -26,6 +26,14 @@
   },
   {
    "cell_type": "markdown",
+   "id": "0ba0bc42-14ca-4562-a19d-492cfda7ff47",
+   "metadata": {},
+   "source": [
+    "## **Python Basics**"
+   ]
+  },
+  {
+   "cell_type": "markdown",
    "id": "229ced00-f07b-4a59-933c-7ad73ec3dc58",
    "metadata": {},
    "source": [
@@ -37,7 +45,7 @@
    "id": "01a1367e-7ddc-4ec7-b2ee-6c710c8b7496",
    "metadata": {},
    "source": [
-    "#### Creating a code to perform an 'if...else' statement which tests whether a number is divisible by three."
+    "##### Creating a code to perform an 'if...else' statement which tests whether a number is divisible by three."
    ]
   },
   {
@@ -65,7 +73,7 @@
   },
   {
    "cell_type": "markdown",
-   "id": "beb77a92-e55f-4f2d-ac87-f8e0c7b3326d",
+   "id": "b5cf1a1d-2c72-4fd2-a511-67f6d3566e67",
    "metadata": {},
    "source": [
     "### **Task 2**"
@@ -76,7 +84,7 @@
    "id": "ba46e351-fa34-4b9f-8126-a26a54827770",
    "metadata": {},
    "source": [
-    "#### Creating a code to perform an 'if...else' statement which tests whether a type of fruit is in a list of acceptable fruits."
+    "##### Creating a code to perform an 'if...else' statement which tests whether a type of fruit is in a list of acceptable fruits."
    ]
   },
   {
@@ -123,7 +131,7 @@
    "id": "1b5087bb-d8e2-40e6-ab2e-2bc8a923237b",
    "metadata": {},
    "source": [
-    "#### Creating a function to calculate distance between two coordinates using the Haversine formula.\n",
+    "##### Creating a function to calculate distance between two coordinates using the Haversine formula.\n",
     "We are calculating the distance between Edinburgh and St Andrews (as the crow flies).The result will be given in kilometers."
    ]
   },
@@ -167,14 +175,6 @@
    "source": [
     "Therefore the distance between Edinburgh and St Andrews (as the crow flies) is 49.35km."
    ]
-  },
-  {
-   "cell_type": "code",
-   "execution_count": null,
-   "id": "3e78f025-de7b-481f-bcc9-d8452832a68e",
-   "metadata": {},
-   "outputs": [],
-   "source": []
   }
  ],
  "metadata": {
