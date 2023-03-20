@@ -123,43 +123,55 @@
    "id": "1b5087bb-d8e2-40e6-ab2e-2bc8a923237b",
    "metadata": {},
    "source": [
-    "#### Creating a function to calculate distance between two coordinates using the Haversine formula."
+    "#### Creating a function to calculate distance between two coordinates using the Haversine formula.\n",
+    "We are calculating the distance between Edinburgh and St Andrews (as the crow flies).The result will be given in kilometers."
    ]
   },
   {
    "cell_type": "code",
-   "execution_count": 15,
-   "id": "ba436ef0-5308-4abd-95a0-34c607a13489",
-   "metadata": {},
-   "outputs": [
-    {
-     "name": "stdout",
-     "output_type": "stream",
-     "text": [
-      "Collecting haversine\n",
-      "  Downloading haversine-2.8.0-py2.py3-none-any.whl (7.7 kB)\n",
-      "Installing collected packages: haversine\n",
-      "Successfully installed haversine-2.8.0\n",
-      "Note: you may need to restart the kernel to use updated packages.\n"
-     ]
-    }
-   ],
-   "source": [
-    "pip install haversine \n"
-   ]
-  },
-  {
-   "cell_type": "code",
-   "execution_count": 17,
+   "execution_count": 1,
    "id": "667cd410-d0f7-4a07-b5a4-170e0e477e8b",
    "metadata": {},
    "outputs": [],
-   "source": []
+   "source": [
+    "import haversine as hs"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 4,
+   "id": "76da3b2b-25ac-4be1-a450-d9fca6369b53",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "49.34978153154274"
+      ]
+     },
+     "execution_count": 4,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "lst1=(55.9533,3.1883)\n",
+    "lst2=(56.3398,2.7967)\n",
+    "hs.haversine(lst1,lst2)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "4e4a18df-8fdb-45ce-91e2-95a958765db6",
+   "metadata": {},
+   "source": [
+    "Therefore the distance between Edinburgh and St Andrews (as the crow flies) is 49.35km."
+   ]
   },
   {
    "cell_type": "code",
    "execution_count": null,
-   "id": "76da3b2b-25ac-4be1-a450-d9fca6369b53",
+   "id": "3e78f025-de7b-481f-bcc9-d8452832a68e",
    "metadata": {},
    "outputs": [],
    "source": []
