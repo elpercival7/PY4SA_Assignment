@@ -89,7 +89,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 14,
+   "execution_count": 18,
    "id": "70b890a9-49fa-4806-b365-565edef6f414",
    "metadata": {},
    "outputs": [
@@ -97,11 +97,7 @@
      "name": "stdout",
      "output_type": "stream",
      "text": [
-      "pear is acceptable\n",
-      "pear is acceptable\n",
-      "pear is acceptable\n",
-      "pear is acceptable\n",
-      "pear is acceptable\n"
+      "pear is an acceptable fruit.\n"
      ]
     }
    ],
@@ -110,12 +106,11 @@
     "\n",
     "x = 'pear'\n",
     "\n",
-    "for x in lst1:\n",
-    "    if x in lst1:\n",
-    "        print (\"pear is acceptable\")\n",
+    "if x in lst1:\n",
+    "        print(str(x) + \" is an acceptable fruit.\")\n",
     "    \n",
-    "    else:\n",
-    "        print (\"pear is not acceptable\")"
+    "else:\n",
+    "        print(str(x) + \" is not an acceptable fruit\")        "
    ]
   },
   {
@@ -175,6 +170,22 @@
    "source": [
     "Therefore the distance between Edinburgh and St Andrews (as the crow flies) is 49.35km."
    ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "a58f6066-18b4-4dfd-b19f-081628cd6759",
+   "metadata": {},
+   "source": [
+    "## **Pandas and NumPy**"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "ddda3f14-35a9-4418-95b7-53ff9fbcfe52",
+   "metadata": {},
+   "outputs": [],
+   "source": []
   }
  ],
  "metadata": {
