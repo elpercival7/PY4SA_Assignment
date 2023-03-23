@@ -199,7 +199,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 7,
+   "execution_count": 1,
    "id": "c04e8887-1e3d-4986-a20f-f24ba26f2059",
    "metadata": {},
    "outputs": [],
@@ -209,7 +209,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 6,
+   "execution_count": 2,
    "id": "1ce21094-1eba-43b9-b358-d32fab51b2f5",
    "metadata": {},
    "outputs": [
@@ -219,7 +219,7 @@
        "5675"
       ]
      },
-     "execution_count": 6,
+     "execution_count": 2,
      "metadata": {},
      "output_type": "execute_result"
     }
@@ -704,14 +704,61 @@
    ]
   },
   {
-   "cell_type": "code",
-   "execution_count": null,
-   "id": "d4c5f8e8-bb2e-42e5-b01d-34251f5bbad4",
+   "cell_type": "markdown",
+   "id": "feb1f9ce-5762-46d6-86fc-a6b2be8c482e",
    "metadata": {},
-   "outputs": [],
    "source": [
     "### **Question 3**"
    ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "f3dc4a06-7405-4259-895c-27df0348e28a",
+   "metadata": {
+    "tags": []
+   },
+   "source": [
+    "##### Which genus has the highest mean DBH of the following genera: Quercus, Acer, or Fraxinus?"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 39,
+   "id": "4f6f079e-c7b9-4087-b8a0-2bb0450d384e",
+   "metadata": {
+    "tags": []
+   },
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Quercus has the highest mean DBH\n"
+     ]
+    }
+   ],
+   "source": [
+    "fraxinus_df = genus_df.query(\"Genus == 'Fraxinus'\")\n",
+    "fraxinus_mean = fraxinus_df[\"DBH\"].mean()\n",
+    "acer_df = genus_df.query(\"Genus == 'Acer'\")\n",
+    "acer_mean = acer_df[\"DBH\"].mean()\n",
+    "quercus_df = genus_df.query(\"Genus == 'Quercus'\")\n",
+    "quercus_mean = quercus_df[\"DBH\"].mean()\n",
+    "if fraxinus_mean > acer_mean and fraxinus_mean > quercus_mean:\n",
+    "    print (\"Fraxinus has the highest mean DBH\")\n",
+    "elif acer_mean > fraxinus_mean and acer_mean > quercus_mean:\n",
+    "    print(\"Acer has the highest mean DBH\")\n",
+    "else: \n",
+    "    print(\"Quercus has the highest mean DBH\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "58ff691d-4d73-46ab-b2e8-4ca17705edd9",
+   "metadata": {},
+   "outputs": [],
+   "source": []
   }
  ],
  "metadata": {
