@@ -753,12 +753,235 @@
    ]
   },
   {
+   "cell_type": "markdown",
+   "id": "082a21bb-f932-4c0d-883b-57b302ce72f9",
+   "metadata": {},
+   "source": [
+    "### **Question 4**"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "c8a5680d-7c0d-42c0-9be7-a16797ae037e",
+   "metadata": {},
+   "source": [
+    "##### How many different species of trees are recorded in the Acer genus?"
+   ]
+  },
+  {
    "cell_type": "code",
-   "execution_count": null,
-   "id": "58ff691d-4d73-46ab-b2e8-4ca17705edd9",
+   "execution_count": 68,
+   "id": "20c59000-9dca-4eed-9a72-991734b7134f",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "There are 20 different species of trees in the Acer genus.\n"
+     ]
+    }
+   ],
+   "source": [
+    "genus_df = pd.read_csv(\"/Users/emmapercival/Desktop/python/Assignment 2 Data/portland_park_trees.csv\", index_col=30)\n",
+    "acer_df = df[df['Genus'] == 'Acer']\n",
+    "acer_species_count = acer_df['Genus_spec'].nunique()\n",
+    "print(f\"There are {acer_species_count} different species of trees in the Acer genus.\")"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "5765dabd-832b-4198-9db9-4dc3850c6466",
+   "metadata": {
+    "tags": []
+   },
+   "source": [
+    "### **Question 5**"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "4a18dce9-080c-40ac-844f-85d0bd8d28ac",
+   "metadata": {},
+   "source": [
+    "#### World Cities"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "0772ad0c-1b72-4428-a8c7-e5fdb8c38ecf",
+   "metadata": {},
+   "source": [
+    "##### Calulating a new column named \"pop_M\", by transforming the \"pop\" column into millions"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 44,
+   "id": "88934f9b-6dd7-4dc6-a9d8-46747e72c957",
    "metadata": {},
    "outputs": [],
-   "source": []
+   "source": [
+    "cities_df = pd.read_csv(\"/Users/emmapercival/Desktop/python/Assignment 2 Data/world_cities.csv\")\n",
+    "cities_df[\"pop_M\"] = (cities_df[\"pop\"]/1000000)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "1ec8ed0f-a74c-4761-909e-93cb1e82cd95",
+   "metadata": {},
+   "source": [
+    "##### Removing the original \"pop\" column"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 45,
+   "id": "0581aaa9-dbdf-40a9-acac-61ae1adbf024",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "cities_update = cities_df.drop([\"pop\"], axis=1)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "8752e4d0-9cce-4f9d-9e08-e14394fd6ec7",
+   "metadata": {},
+   "source": [
+    "##### I have picked Edinburgh, as my name begins with E. Therefore, my country is the UK. I will not subset the five cities with the largest population and print the result below."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 66,
+   "id": "a7bcb0ea-b9f2-401e-bae1-645e0e0653b5",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/html": [
+       "<div>\n",
+       "<style scoped>\n",
+       "    .dataframe tbody tr th:only-of-type {\n",
+       "        vertical-align: middle;\n",
+       "    }\n",
+       "\n",
+       "    .dataframe tbody tr th {\n",
+       "        vertical-align: top;\n",
+       "    }\n",
+       "\n",
+       "    .dataframe thead th {\n",
+       "        text-align: right;\n",
+       "    }\n",
+       "</style>\n",
+       "<table border=\"1\" class=\"dataframe\">\n",
+       "  <thead>\n",
+       "    <tr style=\"text-align: right;\">\n",
+       "      <th></th>\n",
+       "      <th>city</th>\n",
+       "      <th>country</th>\n",
+       "      <th>lat</th>\n",
+       "      <th>lon</th>\n",
+       "      <th>capital</th>\n",
+       "      <th>pop_M</th>\n",
+       "    </tr>\n",
+       "  </thead>\n",
+       "  <tbody>\n",
+       "    <tr>\n",
+       "      <th>21343</th>\n",
+       "      <td>London</td>\n",
+       "      <td>UK</td>\n",
+       "      <td>51.52</td>\n",
+       "      <td>-0.10</td>\n",
+       "      <td>1</td>\n",
+       "      <td>7.489022</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>4502</th>\n",
+       "      <td>Birmingham</td>\n",
+       "      <td>UK</td>\n",
+       "      <td>52.48</td>\n",
+       "      <td>-1.91</td>\n",
+       "      <td>0</td>\n",
+       "      <td>0.986969</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>12618</th>\n",
+       "      <td>Glasgow</td>\n",
+       "      <td>UK</td>\n",
+       "      <td>55.87</td>\n",
+       "      <td>-4.27</td>\n",
+       "      <td>0</td>\n",
+       "      <td>0.607192</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>21164</th>\n",
+       "      <td>Liverpool</td>\n",
+       "      <td>UK</td>\n",
+       "      <td>53.42</td>\n",
+       "      <td>-2.99</td>\n",
+       "      <td>0</td>\n",
+       "      <td>0.468584</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>20526</th>\n",
+       "      <td>Leeds</td>\n",
+       "      <td>UK</td>\n",
+       "      <td>53.81</td>\n",
+       "      <td>-1.55</td>\n",
+       "      <td>0</td>\n",
+       "      <td>0.457875</td>\n",
+       "    </tr>\n",
+       "  </tbody>\n",
+       "</table>\n",
+       "</div>"
+      ],
+      "text/plain": [
+       "             city country    lat   lon  capital     pop_M\n",
+       "21343      London      UK  51.52 -0.10        1  7.489022\n",
+       "4502   Birmingham      UK  52.48 -1.91        0  0.986969\n",
+       "12618     Glasgow      UK  55.87 -4.27        0  0.607192\n",
+       "21164   Liverpool      UK  53.42 -2.99        0  0.468584\n",
+       "20526       Leeds      UK  53.81 -1.55        0  0.457875"
+      ]
+     },
+     "execution_count": 66,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "(cities_update.query(\"country == 'UK'\")\n",
+    " .sort_values(by=\"pop_M\", ascending=False)\n",
+    " .head(5))"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "bcb5349e-540b-46bb-b343-f7700faa2802",
+   "metadata": {},
+   "source": [
+    "## **Python Data Visualization**"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "6390a780-f8be-4b67-be04-942b942a3046",
+   "metadata": {},
+   "source": [
+    "### **Graph 1**"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "3d34b3a4-5c57-4d77-a487-11ed678b10b7",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "Scatterplot showing trees in the Ulmus genus"
+   ]
   }
  ],
  "metadata": {
