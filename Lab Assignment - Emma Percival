@@ -1691,9 +1691,43 @@
    ]
   },
   {
+   "cell_type": "markdown",
+   "id": "38891de8-ba49-4e7d-ad83-74900e66d366",
+   "metadata": {},
+   "source": [
+    "### **Task 4**"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "0457cee4-d4b9-4eef-a1a4-b3e65aca4a19",
+   "metadata": {},
+   "source": [
+    "#### What is the coordinate reference system of the selected dataset?"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 178,
+   "id": "38624930-d669-4141-807d-6d53b9653f93",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "EPSG:27700\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(gpd.read_file(\"/Users/emmapercival/Desktop/python/Secondary_School_Catchments_(Moray)_(non_denominational)/Secondary_School_Catchments_(Moray)_(non_denominational).shp\").crs)"
+   ]
+  },
+  {
    "cell_type": "code",
    "execution_count": null,
-   "id": "c726452d-99ce-45ad-866a-ebbd641d4d0f",
+   "id": "2cbe5e0d-174d-4433-9d92-97bdf54086be",
    "metadata": {},
    "outputs": [],
    "source": []
