@@ -45,7 +45,7 @@
    "id": "01a1367e-7ddc-4ec7-b2ee-6c710c8b7496",
    "metadata": {},
    "source": [
-    "##### Creating a code to perform an 'if...else' statement which tests whether a number is divisible by three."
+    "#### Creating a code to perform an 'if...else' statement which tests whether a number is divisible by three."
    ]
   },
   {
@@ -84,7 +84,7 @@
    "id": "ba46e351-fa34-4b9f-8126-a26a54827770",
    "metadata": {},
    "source": [
-    "##### Creating a code to perform an 'if...else' statement which tests whether a type of fruit is in a list of acceptable fruits."
+    "#### Creating a code to perform an 'if...else' statement which tests whether a type of fruit is in a list of acceptable fruits."
    ]
   },
   {
@@ -128,8 +128,8 @@
     "tags": []
    },
    "source": [
-    "##### Creating a function to calculate distance between two coordinates using the Haversine formula.\n",
-    "We are calculating the distance between Edinburgh and St Andrews (as the crow flies).The result will be given in kilometers."
+    "#### Creating a function to calculate distance between two coordinates using the Haversine formula.\n",
+    "#### We are calculating the distance between Edinburgh and St Andrews (as the crow flies).The result will be given in kilometers."
    ]
   },
   {
@@ -170,7 +170,7 @@
    "id": "4e4a18df-8fdb-45ce-91e2-95a958765db6",
    "metadata": {},
    "source": [
-    "Therefore the distance between Edinburgh and St Andrews (as the crow flies) is 49.35km."
+    "#### Therefore the distance between Edinburgh and St Andrews (as the crow flies) is 49.35km."
    ]
   },
   {
@@ -194,7 +194,7 @@
    "id": "d63a79e7-f20a-4c7d-a621-7da29c796b42",
    "metadata": {},
    "source": [
-    "##### How many trees are of the Quercus or Acer genus?"
+    "#### How many trees are of the Quercus or Acer genus?"
    ]
   },
   {
@@ -235,7 +235,7 @@
    "id": "e3dfcf30-2184-485f-ad42-ed26944bb268",
    "metadata": {},
    "source": [
-    "##### Therefore there are 5,675 trees of the Quercus or Acer genus in Portland Park."
+    "#### Therefore there are 5,675 trees of the Quercus or Acer genus in Portland Park."
    ]
   },
   {
@@ -251,7 +251,7 @@
    "id": "efb1e957-2f0d-40d5-9005-87a5e6ed8213",
    "metadata": {},
    "source": [
-    "##### How many trees are of the Quercus or Acer genus and have a DBH larger than 50 inches?"
+    "#### How many trees are of the Quercus or Acer genus and have a DBH larger than 50 inches?"
    ]
   },
   {
@@ -700,7 +700,7 @@
    "id": "0947b034-9401-43af-972e-e8a34537567f",
    "metadata": {},
    "source": [
-    "##### Therefore there are 124 trees which are either Quercus or Acer and have a DBH of more than 50 inches."
+    "#### Therefore there are 124 trees which are either Quercus or Acer and have a DBH of more than 50 inches."
    ]
   },
   {
@@ -718,7 +718,7 @@
     "tags": []
    },
    "source": [
-    "##### Which genus has the highest mean DBH of the following genera: Quercus, Acer, or Fraxinus?"
+    "#### Which genus has the highest mean DBH of the following genera: Quercus, Acer, or Fraxinus?"
    ]
   },
   {
@@ -765,7 +765,7 @@
    "id": "c8a5680d-7c0d-42c0-9be7-a16797ae037e",
    "metadata": {},
    "source": [
-    "##### How many different species of trees are recorded in the Acer genus?"
+    "#### How many different species of trees are recorded in the Acer genus?"
    ]
   },
   {
@@ -812,7 +812,7 @@
    "id": "0772ad0c-1b72-4428-a8c7-e5fdb8c38ecf",
    "metadata": {},
    "source": [
-    "##### Calulating a new column named \"pop_M\", by transforming the \"pop\" column into millions"
+    "#### Calulating a new column named \"pop_M\", by transforming the \"pop\" column into millions"
    ]
   },
   {
@@ -831,7 +831,7 @@
    "id": "1ec8ed0f-a74c-4761-909e-93cb1e82cd95",
    "metadata": {},
    "source": [
-    "##### Removing the original \"pop\" column"
+    "#### Removing the original \"pop\" column"
    ]
   },
   {
@@ -849,7 +849,7 @@
    "id": "8752e4d0-9cce-4f9d-9e08-e14394fd6ec7",
    "metadata": {},
    "source": [
-    "##### I have picked Edinburgh, as my name begins with E. Therefore, my country is the UK. I will not subset the five cities with the largest population and print the result below."
+    "#### I have picked Edinburgh, as my name begins with E. Therefore, my country is the UK. I will not subset the five cities with the largest population and print the result below."
    ]
   },
   {
@@ -978,7 +978,7 @@
    "id": "f3f81c0d-b8c6-4b9d-a089-048d2f0f3768",
    "metadata": {},
    "source": [
-    "#### Scatterplot showing trees in the Ulmus genus with DBH mapped to the x-axis and tree height mapped to the y-axis."
+    "####  Scatterplot showing trees in the Ulmus genus with DBH mapped to the x-axis and tree height mapped to the y-axis."
    ]
   },
   {
@@ -1072,7 +1072,7 @@
    "id": "a12ef304-e532-451e-8e98-084d745d5f87",
    "metadata": {},
    "source": [
-    "#### Boxplot of DBH for the Ulmus genus differentiated by species."
+    "####  Boxplot of DBH for the Ulmus genus differentiated by species."
    ]
   },
   {
@@ -1158,9 +1158,223 @@
    ]
   },
   {
+   "cell_type": "markdown",
+   "id": "f6a9f40f-d38a-4dcb-8234-b13180590cd2",
+   "metadata": {},
+   "source": [
+    "### The spatial data set I have selected shows Secondary School catchment areas in Moray Council."
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "55c8fcd1-aecb-417e-a10c-70265321d499",
+   "metadata": {},
+   "source": [
+    "### **Task 1**"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "229a7b7f-a0a8-4a37-9f9e-705cac3f4964",
+   "metadata": {},
+   "source": [
+    "#### Reading the data file using Geopandas"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 141,
+   "id": "c115d4c4-06ab-49c5-9370-47e35b258249",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "import numpy as np\n",
+    "import pandas as pd\n",
+    "import matplotlib.pyplot as plt\n",
+    "%matplotlib inline\n",
+    "import geopandas as gpd"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 147,
+   "id": "e744aad5-faba-4862-ab0b-b06e12188970",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "schools_df= gpd.read_file(\"/Users/emmapercival/Desktop/python/Secondary_School_Catchments_(Moray)_(non_denominational)/Secondary_School_Catchments_(Moray)_(non_denominational).shp\")"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "419917c3-de40-4e3d-bf33-38b81360f19e",
+   "metadata": {},
+   "source": [
+    "### **Task 2**"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "8f6c959f-de54-4ec0-9135-8a44cad226ea",
+   "metadata": {},
+   "source": [
+    "### Using the correct code to plot the first 5 and last 5 records in the data set."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 148,
+   "id": "074fc8ab-df4f-427f-bb9f-d6d3391694d3",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "   OBJECTID                   SCHOOL                ASG PAGENO  \\\n",
+      "0         1     Speyside High School       Speyside ASG    727   \n",
+      "1         2           Forres Academy         Forres ASG   2232   \n",
+      "2         3  Lossiemouth High School    Lossiemouth ASG    743   \n",
+      "3         4        Elgin High School     Elgin High ASG   2216   \n",
+      "4         5            Elgin Academy  Elgin Academy ASG    747   \n",
+      "\n",
+      "                                                 URL  DSDateOpen  DSDateClos  \\\n",
+      "0  http://www.moray.gov.uk/moray_schools/page_727...  2017-06-15         NaN   \n",
+      "1  http://www.moray.gov.uk/moray_schools/page_223...  2017-06-15         NaN   \n",
+      "2  http://www.moray.gov.uk/moray_schools/page_743...  2017-06-15         NaN   \n",
+      "3  http://www.moray.gov.uk/moray_schools/page_221...  2017-06-15         NaN   \n",
+      "4  http://www.moray.gov.uk/moray_schools/page_747...  2017-06-15         NaN   \n",
+      "\n",
+      "   DSDateModi  DSDatePubl  DSDateSupe  ...    X_Coord    Y_Coord  \\\n",
+      "0  2022-12-08  2017-08-14         NaN  ...  326946.54  842954.68   \n",
+      "1  2022-12-08  2017-08-14         NaN  ...  303779.78  858209.88   \n",
+      "2  2022-12-08  2017-08-14         NaN  ...  322968.00  869969.00   \n",
+      "3  2022-12-08  2017-08-14         NaN  ...  321068.00  861432.00   \n",
+      "4  2022-12-08  2017-08-14         NaN  ...  320835.31  863410.29   \n",
+      "\n",
+      "             Latitude          Longitude  \\\n",
+      "0  57° 28' 15.4111\" N  3° 13' 10.7397\" W   \n",
+      "1  57° 36' 12.9470\" N  3° 36' 42.4290\" W   \n",
+      "2  57° 42' 46.3668\" N  3° 17' 40.4028\" W   \n",
+      "3   57° 38' 9.1993\" N  3° 19' 25.0991\" W   \n",
+      "4  57° 39' 13.0055\" N  3° 19' 41.4603\" W   \n",
+      "\n",
+      "                                                Addr          UPRN Seed_Code  \\\n",
+      "0  Speyside High School Mary Avenue Aberlour AB38...  000133002296   5208939   \n",
+      "1      Forres Academy Burdsyard Road Forres IV36 1FG  000133039551   5203031   \n",
+      "2  Lossiemouth High School Coulardbank Road Lossi...  000133072026   5203139   \n",
+      "3        Elgin High School Edgar Road Elgin IV30 6UD  000133070677   5210038   \n",
+      "4        Elgin Academy Morriston Road Elgin IV30 4ND  000133066269   5202736   \n",
+      "\n",
+      "     SHAPESTAre     SHAPESTLen  \\\n",
+      "0  1.046580e+09  232806.936586   \n",
+      "1  4.377971e+08  130364.333500   \n",
+      "2  6.905086e+07   46974.345192   \n",
+      "3  9.415234e+07   51437.568994   \n",
+      "4  2.962279e+07   28676.690617   \n",
+      "\n",
+      "                                            geometry  \n",
+      "0  POLYGON ((329399.662 855224.493, 329449.905 85...  \n",
+      "1  POLYGON ((314594.954 865006.105, 314959.566 86...  \n",
+      "2  POLYGON ((320000.094 871554.813, 320029.188 87...  \n",
+      "3  POLYGON ((316936.316 863052.245, 317193.016 86...  \n",
+      "4  MULTIPOLYGON (((322648.190 866421.813, 322660....  \n",
+      "\n",
+      "[5 rows x 22 columns]\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(schools_df.head(5))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 151,
+   "id": "4accdb49-395c-405a-8d27-6a7aba955773",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "   OBJECTID                SCHOOL                ASG PAGENO  \\\n",
+      "3         4     Elgin High School     Elgin High ASG   2216   \n",
+      "4         5         Elgin Academy  Elgin Academy ASG    747   \n",
+      "5         6   Milne's High School   Milne's High ASG   1462   \n",
+      "6         7    Buckie High School             Buckie    751   \n",
+      "7         8  Keith Grammar School              Keith   2209   \n",
+      "\n",
+      "                                                 URL  DSDateOpen  DSDateClos  \\\n",
+      "3  http://www.moray.gov.uk/moray_schools/page_221...  2017-06-15         NaN   \n",
+      "4  http://www.moray.gov.uk/moray_schools/page_747...  2017-06-15         NaN   \n",
+      "5  http://www.moray.gov.uk/moray_schools/page_146...  2017-06-15         NaN   \n",
+      "6  http://www.moray.gov.uk/moray_schools/page_751...  2017-06-15         NaN   \n",
+      "7  http://www.moray.gov.uk/moray_schools/page_220...  2017-06-15         NaN   \n",
+      "\n",
+      "   DSDateModi  DSDatePubl  DSDateSupe  ...    X_Coord    Y_Coord  \\\n",
+      "3  2022-12-08  2017-08-14         NaN  ...  321068.00  861432.00   \n",
+      "4  2022-12-08  2017-08-14         NaN  ...  320835.31  863410.29   \n",
+      "5  2022-12-08  2017-08-14         NaN  ...  334355.01  858290.99   \n",
+      "6  2022-12-08  2017-08-14         NaN  ...  342247.26  865173.88   \n",
+      "7  2022-12-08  2017-08-14         NaN  ...  343524.06  850936.66   \n",
+      "\n",
+      "             Latitude          Longitude  \\\n",
+      "3   57° 38' 9.1993\" N  3° 19' 25.0991\" W   \n",
+      "4  57° 39' 13.0055\" N  3° 19' 41.4603\" W   \n",
+      "5  57° 36' 35.3298\" N    3° 6' 1.0874\" W   \n",
+      "6  57° 40' 21.7559\" N  2° 58' 11.5931\" W   \n",
+      "7  57° 32' 42.0217\" N  2° 56' 42.5736\" W   \n",
+      "\n",
+      "                                                Addr          UPRN Seed_Code  \\\n",
+      "3        Elgin High School Edgar Road Elgin IV30 6UD  000133070677   5210038   \n",
+      "4        Elgin Academy Morriston Road Elgin IV30 4ND  000133066269   5202736   \n",
+      "5  Milne's High School West Street Fochabers IV32...  000133040334   5202930   \n",
+      "6  Buckie High School West Cathcart Street Buckie...  000133038861   5208734   \n",
+      "7    Keith Grammar School School Road Keith AB55 5ES  000133038733   5208831   \n",
+      "\n",
+      "     SHAPESTAre    SHAPESTLen  \\\n",
+      "3  9.415234e+07  51437.568994   \n",
+      "4  2.962279e+07  28676.690617   \n",
+      "5  1.654570e+08  70409.683891   \n",
+      "6  1.142645e+08  73815.040682   \n",
+      "7  3.258887e+08  96491.718436   \n",
+      "\n",
+      "                                            geometry  \n",
+      "3  POLYGON ((316936.316 863052.245, 317193.016 86...  \n",
+      "4  MULTIPOLYGON (((322648.190 866421.813, 322660....  \n",
+      "5  POLYGON ((327955.000 868128.000, 327963.000 86...  \n",
+      "6  POLYGON ((349517.438 868872.350, 349520.063 86...  \n",
+      "7  POLYGON ((331147.000 850452.500, 331143.990 85...  \n",
+      "\n",
+      "[5 rows x 22 columns]\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(schools_df.tail(5))"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "25823f4f-8e1b-400c-a8d2-2cacdfa46d7d",
+   "metadata": {},
+   "source": [
+    "#### At first, I believed this code was wrong. However, as there are only 8 secondary schools in Moray, there is an overlap between the first 5 and last 5 records in the data set."
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "0d34d615-c323-4ef9-b649-d2b4b7d5c642",
+   "metadata": {},
+   "source": [
+    "### **Task 3**"
+   ]
+  },
+  {
    "cell_type": "code",
    "execution_count": null,
-   "id": "8febc3cb-6780-44ef-9e2b-f107b6cbbde7",
+   "id": "b85f4204-ed59-40f6-9678-ce4901d29c7a",
    "metadata": {},
    "outputs": [],
    "source": []
