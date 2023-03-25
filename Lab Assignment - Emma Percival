@@ -1725,9 +1725,228 @@
    ]
   },
   {
+   "cell_type": "markdown",
+   "id": "9695d7e0-853c-45d5-a767-08f00ab84c72",
+   "metadata": {},
+   "source": [
+    "#### Therefore the coordinate system is **ESPG: 27700** (British National Grid)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "9551ce38-5549-4a54-a90a-36d427ed321a",
+   "metadata": {},
+   "source": [
+    "### **Task 5**"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "a4043c7a-a4ec-41fe-8fbd-f56b590b0d52",
+   "metadata": {},
+   "source": [
+    "#### How many features does the selected dataset contain?"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 184,
+   "id": "e051b521-fb42-4e8d-aa7a-66a80f0727dc",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "8"
+      ]
+     },
+     "execution_count": 184,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "schools_df.shape[0]"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "c5c13ae8-2fee-48ab-bfd1-abf144d41cbe",
+   "metadata": {},
+   "source": [
+    "#### Therefore, there are 8 features (Secondary Schools) in the dataset."
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "8eae2c05-3b4b-49bb-b0ed-823bea42ce0a",
+   "metadata": {},
+   "source": [
+    "### **Task 6**"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "822cec87-415f-40c2-a37f-a7054dab3acc",
+   "metadata": {},
+   "source": [
+    "#### Define a sub-setting criterion to create a new geopandas dataframe where you filter the selected dataset based on a categorical attribute."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 187,
+   "id": "ba4df403-04e4-4cdd-a18f-f7c85e0e5e7b",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "0    False\n",
+      "1    False\n",
+      "2    False\n",
+      "3    False\n",
+      "4    False\n",
+      "5    False\n",
+      "6     True\n",
+      "7    False\n",
+      "Name: SCHOOL, dtype: bool\n"
+     ]
+    }
+   ],
+   "source": [
+    "school_name = schools_df['SCHOOL'] == 'Buckie High School'\n",
+    "print(school_name)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 188,
+   "id": "0892972c-24c1-4213-8594-bd195afb82f8",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "   OBJECTID              SCHOOL     ASG PAGENO  \\\n",
+      "6         7  Buckie High School  Buckie    751   \n",
+      "\n",
+      "                                                 URL  DSDateOpen  DSDateClos  \\\n",
+      "6  http://www.moray.gov.uk/moray_schools/page_751...  2017-06-15         NaN   \n",
+      "\n",
+      "   DSDateModi  DSDatePubl  DSDateSupe  ...    X_Coord    Y_Coord  \\\n",
+      "6  2022-12-08  2017-08-14         NaN  ...  342247.26  865173.88   \n",
+      "\n",
+      "             Latitude          Longitude  \\\n",
+      "6  57° 40' 21.7559\" N  2° 58' 11.5931\" W   \n",
+      "\n",
+      "                                                Addr          UPRN Seed_Code  \\\n",
+      "6  Buckie High School West Cathcart Street Buckie...  000133038861   5208734   \n",
+      "\n",
+      "     SHAPESTAre    SHAPESTLen  \\\n",
+      "6  1.142645e+08  73815.040682   \n",
+      "\n",
+      "                                            geometry  \n",
+      "6  POLYGON ((349517.438 868872.350, 349520.063 86...  \n",
+      "\n",
+      "[1 rows x 22 columns]\n"
+     ]
+    }
+   ],
+   "source": [
+    "school_name_criterion = schools_df[school_name]\n",
+    "print(school_name_criterion)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "7f5174fc-873c-4b46-a0fb-9e0ceb9de1a6",
+   "metadata": {},
+   "source": [
+    "### **Task 7**"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "46ea278e-244b-479e-a092-f7f63fe62254",
+   "metadata": {},
+   "source": [
+    "#### Define a sub-setting criterion to create a new geopandas dataframe where you filter the selected dataset based on a numerical attribute."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 193,
+   "id": "93aae6b5-014d-4b1c-8f2c-e33b89da43c8",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "0    False\n",
+      "1    False\n",
+      "2    False\n",
+      "3    False\n",
+      "4     True\n",
+      "5    False\n",
+      "6    False\n",
+      "7    False\n",
+      "Name: PAGENO, dtype: bool\n"
+     ]
+    }
+   ],
+   "source": [
+    "school_pageno = schools_df['PAGENO'] == '747'\n",
+    "print(school_pageno)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 194,
+   "id": "afe53b5b-5b40-4311-8882-387efe244ff6",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "   OBJECTID         SCHOOL                ASG PAGENO  \\\n",
+      "4         5  Elgin Academy  Elgin Academy ASG    747   \n",
+      "\n",
+      "                                                 URL  DSDateOpen  DSDateClos  \\\n",
+      "4  http://www.moray.gov.uk/moray_schools/page_747...  2017-06-15         NaN   \n",
+      "\n",
+      "   DSDateModi  DSDatePubl  DSDateSupe  ...    X_Coord    Y_Coord  \\\n",
+      "4  2022-12-08  2017-08-14         NaN  ...  320835.31  863410.29   \n",
+      "\n",
+      "             Latitude          Longitude  \\\n",
+      "4  57° 39' 13.0055\" N  3° 19' 41.4603\" W   \n",
+      "\n",
+      "                                          Addr          UPRN Seed_Code  \\\n",
+      "4  Elgin Academy Morriston Road Elgin IV30 4ND  000133066269   5202736   \n",
+      "\n",
+      "     SHAPESTAre    SHAPESTLen  \\\n",
+      "4  2.962279e+07  28676.690617   \n",
+      "\n",
+      "                                            geometry  \n",
+      "4  MULTIPOLYGON (((322648.190 866421.813, 322660....  \n",
+      "\n",
+      "[1 rows x 22 columns]\n"
+     ]
+    }
+   ],
+   "source": [
+    "school_pageno_criterion = schools_df[school_pageno]\n",
+    "print(school_pageno_criterion)"
+   ]
+  },
+  {
    "cell_type": "code",
    "execution_count": null,
-   "id": "2cbe5e0d-174d-4433-9d92-97bdf54086be",
+   "id": "28df9c72-a2c5-428b-a145-188f3d49d197",
    "metadata": {},
    "outputs": [],
    "source": []
