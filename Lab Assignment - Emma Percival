@@ -91,7 +91,9 @@
    "cell_type": "code",
    "execution_count": 18,
    "id": "70b890a9-49fa-4806-b365-565edef6f414",
-   "metadata": {},
+   "metadata": {
+    "tags": []
+   },
    "outputs": [
     {
      "name": "stdout",
